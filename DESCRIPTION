@@ -1,1 +1,36 @@
+Automated Hand Sanitizer Dispenser Project
 
+Project Overview:
+The Automated Hand Sanitizer Dispenser is designed to encourage hygiene by dispensing hand sanitizer automatically when a hand is detected near the sensor. 
+This project makes use of an Arduino Uno, ultrasonic sensor, and a motor-driven pump controlled by a BC547 transistor.
+
+Components Used:
+
+Arduino Uno
+Ultrasonic sensor (HC-SR04)
+BC547 transistor
+12V motor pump
+9V batteries
+Resistors
+Jumper wires
+Breadboard
+Power supply (9V battery)
+
+Circuit Diagram
+Ensure your circuit is connected as follows:
+
+Ultrasonic sensor:
+
+VCC -> 5V on Arduino
+GND -> GND on Arduino
+Trig pin -> Digital pin 7 on Arduino
+Echo pin -> Digital pin 6 on Arduino
+
+BC547 Transistor:
+Base -> Digital pin 9 through a 1kΩ resistor
+Collector -> Negative terminal of the motor
+Emitter -> GND
+
+Motor Pump:
+Positive terminal -> Positive end of 12V power supply
+Negative terminal -> Collector of BC547 transistor
