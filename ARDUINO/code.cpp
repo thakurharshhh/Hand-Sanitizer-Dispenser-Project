@@ -1,5 +1,4 @@
 // Arduino Code
-
 // Constants for the ultrasonic sensor
 const int trigPin = 7;
 const int echoPin = 6;
